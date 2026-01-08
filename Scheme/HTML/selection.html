@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
     <title>Selection</title>
+    <link rel="stylesheet" href="/Scheme/CSS/style_selection.css">
 </head>
+
+
 <body>
-    <h1>Login Successful!</h1>
-    <p>Bienvenidos </p>
+
+    <div class="logo" aria-hidden="true"></div>
+
+    <h2 style="text-align: center;">Bienvenidos a Registro de Bienes Patrimoniales</h2>
+
+    <div class="selection-container">
+        <form action="/selection" method="POST" class="selection-form">
+            <div class="form-header">
+            <h2>Seleccione una opción</h2>
+            </div>
+
+        </form>
+
+        <div class="input-group-register">
+                <button type="submit" name="action" value="register" class="selection-btn"> Registrar Nuevo Bien</button>
+            </div>
+
+            <div class="input-group-view">
+                <button type="submit" name="action" value="view" class="selection-btn">Ver Bienes Registrados</button>
+            </div>
 
     <div class="navigation-links">
         
@@ -13,4 +34,6 @@
 
     <a href="/">Logout</a>
 </body>
+
+
 </html>
