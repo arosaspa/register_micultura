@@ -1,130 +1,99 @@
-h2 {
-    color: #4a5568;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 15px;
-}
+/* Style for selected text */
 
-/* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /* Soft light gray background */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-/* Logo Styling */
-.logo {
-margin: 20px auto;
-    background-image: url('/Scheme/Pictures/logo.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 80px;
+.background-page2 {
+    
+    background-color: blue;
+    background-image: url('../Pictures/city.png');
+    background-size: cover;
     background-position: center;
-}
-
-
-
-/* Welcome Text */
-p {
-    font-size: 1.2rem;
-    color: #2c3e50;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Main Container */
-
-.selection-container {
-    display: flex;
-    justify-content: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     width: 100%;
-    padding: 20px;
-}
-
-.selection-form {
-    width: 360px;
-    padding: 2rem;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    background-attachment: fixed;
 }
 
 
-.form-header h2 {
-    color: #4a5568;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 15px;
-}
-
-/* Button Groups */
-.input-group-register {
-    margin-bottom: 40px;
-    width: 100%;
-}
-
+/* Container spacing for the buttons */
+.input-group-register, 
 .input-group-view {
-    margin-bottom: 400px;
+    margin-bottom: 16px;
     width: 100%;
 }
 
-
-/* Professional Gray Buttons */
+/* Base button style (Modern & Clean) */
 .selection-btn {
     width: 100%;
-    padding: 15px;
-    background-color: #4a5568; /* Slate Gray */
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
     font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 6px; /* Professional slight roundness */
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    outline: none;
 }
 
-.selection-btn:hover {
-    background-color: #2d3748; /* Darker Charcoal Gray */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+/* PRIMARY BUTTON: Registrar Nuevo Bien */
+.input-group-register .selection-btn {
+    background-color: #0052cc; /* Corporate Blue */
+    color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.selection-btn:active {
+.input-group-register .selection-btn:hover {
+    background-color: #0065ff; /* Slightly brighter on hover */
+    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.2);
+    transform: translateY(-1px);
+}
+
+.input-group-register .selection-btn:active {
+    background-color: #0747a6;
     transform: translateY(0);
 }
 
-/* Logout Link */
-a {
-    margin-top: 25px;
-    text-decoration: none;
-    color: #e53e3e; /* Professional Red for Exit */
-    font-weight: 600;
-    font-size: 14px;
-    transition: color 0.2s;
+/* SECONDARY BUTTON: Ver Bienes Registrados */
+.input-group-view .selection-btn {
+    background-color: #ffffff;
+    color: #44546f; /* Slate Gray */
+    border: 1px solid #d1d5db; /* Subtle border */
 }
 
-a:hover {
-    color: #c53030;
-    text-decoration: underline;
+.input-group-view .selection-btn:hover {
+    background-color: #f4f5f7;
+    border-color: #8590a2;
+    color: #172b4d;
 }
 
-.background-page2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f9; /* Soft grey-blue background */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.input-group-view .selection-btn:active {
+    background-color: #ebecf0;
 }
+
+/* Focus state for accessibility (Professional Standard) */
+.selection-btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(38, 132, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
